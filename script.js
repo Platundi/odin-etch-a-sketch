@@ -12,6 +12,15 @@ elements.forEach((element) => {
     let hoveredElement = event.target;
     hoveredElement.classList.add("hover");
   });
+  element.addEventListener("touchstart", (event) => {
+    let hoveredElement = event.target;
+    event.preventDefault();
+    hoveredElement.classList.add("hover");
+  });
+  element.addEventListener("touchend", (event) => {
+    let hoveredElement = event.target;
+    hoveredElement.classList.add("hover");
+  });
 });
 
 // let container = document.querySelector("div");
