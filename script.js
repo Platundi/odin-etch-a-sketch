@@ -14,7 +14,6 @@ elements.forEach((element) => {
   });
   element.addEventListener("touchstart", (event) => {
     let hoveredElement = event.target;
-    event.preventDefault();
     hoveredElement.classList.add("hover");
   });
   element.addEventListener("touchend", (event) => {
