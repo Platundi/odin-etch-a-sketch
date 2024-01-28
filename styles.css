@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    border: 1px solid;
+    flex: 1 0 5.88%;
+}
+
+.hover {
+    background-color: red;
+}
