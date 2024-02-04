@@ -1,14 +1,29 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 8px;
+}
+
 .container {
-    height: 100vh;
+    aspect-ratio: 1 / 1;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 0.5em 0.5em;
 }
 
 .container div {
     border: 1px solid;
-    flex: 1 0 5.88%;
+    box-sizing: border-box;
 }
 
 .hover {
     background-color: red;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0 0;
 }
