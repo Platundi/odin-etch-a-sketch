@@ -16,21 +16,21 @@ function hoverHandler() {
   let elements = document.querySelectorAll(".container .field");
   elements.forEach((element) => {
     element.addEventListener("mouseenter", (event) => {
+      let hoveredElement = event.target;
       let randomRed = Math.floor(Math.random() * 256);
       let randomGreen = Math.floor(Math.random() * 256);
       let randomBlue = Math.floor(Math.random() * 256);
-      let hoveredElement = event.target;
       hoveredElement.style.backgroundColor =
         "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
       // hoveredElement.classList.add("hover");
     });
-    element.addEventListener("touchstart", (event) => {
+    element.addEventListener("touchmove", (event) => {
       let hoveredElement = event.target;
-      hoveredElement.classList.add("hover");
-    });
-    element.addEventListener("touchend", (event) => {
-      let hoveredElement = event.target;
-      hoveredElement.classList.add("hover");
+      let randomRed = Math.floor(Math.random() * 256);
+      let randomGreen = Math.floor(Math.random() * 256);
+      let randomBlue = Math.floor(Math.random() * 256);
+      hoveredElement.style.backgroundColor =
+        "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
     });
   });
 }
